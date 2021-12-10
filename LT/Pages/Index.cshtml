@@ -1,0 +1,68 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="~/css/site.css" rel="stylesheet" />
+<script src="~/js/site.js"></script>
+<div align="center" style="position: absolute;z-index:-500; width: 100%; height: 100%;background-repeat:no-repeat;background-position:center;background-size:cover;opacity:0.7; background-image: url('https://images.unsplash.com/photo-1589187775328-882e91b3db4f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80'); "></div>
+<div id="backdrop" onclick="out()"></div>
+<div id="summary"><div id="Qdata"></div></div>
+<div class="row">
+    <div class="side">
+        <div class="form-popup" id="myForm">
+            <h3>Enter Project Name</h3>
+            <input type="text" id="projectName" name="projectname" value="Untitled Project" required>
+            <button type="submit" class="btn btn-outline-success" onclick="openProject(); closeForm(); openQuestion()">Next</button>
+            <button type="button" class="btn btn-outline-danger" onclick="closeForm()">Close</button>
+        </div>
+        <h3>
+            <button type="button" id="b1" style="background-color: #ecf0f5; border: none; color: #ecf0f5; padding: 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 0px; margin: 0px 0px;border-radius: 100px; " onclick="openForm()">.</button>
+        </h3>
+    </div>
+    <div class="main">
+        <p id="createProject" class="createProject" style="color: #25476a;">
+            <br />
+        </p>
+
+        <div id="O" class="O" style="visibility:hidden;  border: 3px outset green; text-align: start; border-radius: 15px; padding :10px;">
+            <button type="button" class="btn btn-outline-success" onclick="createOption()">Add Option</button>
+
+        </div>
+    </div>
+</div>
+<div id="Question" class="container" style="visibility:hidden; position:center;">
+    <div class="form-container">
+        <form>
+            <h1 class="title">Add Your Questions</h1>
+            <hr class="line" />
+            <div class="input-field">
+                Question : &nbsp
+                <input type="text" name="question" id="question" value="Question" required />
+            </div>
+
+            <label for="answer">Choose Answer Type:</label>
+            <select id="type" name="Question Types">
+                <option value="Single Response" selected>Single Response</option>
+                <option value="Multi Response">Multi Response</option>
+                <option value="Grid Response">Grid Response</option>
+                <option value="Open End">Open End</option>
+            </select>
+            <br>
+            <div class="input-btn">
+                <input type="button" id="submit" class="btn btn-outline-success" onclick="addnewquestion()" value="Submit">
+            </div>
+            <hr class="line" />
+        </form>
+    </div>
+</div>
+<div>
+    <button type="button" id="Sbutton" class="summary" name="button" onclick="Qsummary()" style="visibility:hidden">Summary</button>
+</div>
+<div id="show" class="show"></div>
+    </div>
+

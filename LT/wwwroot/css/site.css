@@ -1,0 +1,306 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+.start {
+    text-align: left;
+    padding: 20px;
+    font-weight: bolder;
+    font-size: 150%;
+}
+
+.start button:hover {
+    transform: scale(1.1,1.1);
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    padding: 10px;
+    width: 19vw;
+    height: 25vh;
+    min-width: 200px;
+    top: 50vh;
+    left: 42vw;
+    border-style: solid;
+    border-color: #25476a;
+    background-color:white;
+    border-radius:15px;
+}
+
+    .form-popup input {
+       
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        border: none;
+        background: #f1f1f1;
+    }
+
+    .form-popup button:hover {
+        transform: scale(1.1,1.1);
+        border-radius: 10px;
+    }
+
+    .form-popup button:hover {
+        transform: scale(1.1,1.1);
+        border-radius: 10px;
+    }
+
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        color: #25476a;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        .dropdown-content a:hover {
+            background-color: #25476a
+        }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+}
+
+#result {
+    overflow: auto;
+}
+
+
+
+.form-container {
+    top: 37vh;
+    left: 35vw;
+    padding: 10px;
+    width: 50vw;
+    height: 30vh;
+    min-width: 200px;
+    justify-content: center;
+    margin: auto;
+    border-radius: 15px;
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border-style: solid;
+    border-color: #25476a;
+    background-color: white;
+    border-radius: 15px;
+}
+
+    .form-container input {
+        padding: 10px 10px;
+        margin: 0;
+        outline: none;
+    }
+
+select {
+    padding: 3px;
+}
+
+.show {
+}
+
+.title {
+    text-align: center;
+}
+
+.form {
+    margin: 2rem 0rem;
+}
+
+.line {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.input-field {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem;
+    flex-wrap: wrap;
+}
+
+    .input-field input {
+        padding: 0.25rem 0.5rem;
+        flex: 1;
+    }
+
+.input-btn {
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.btn-primary {
+    width: 50%;
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 800px) {
+    .form-container {
+        width: 90%;
+    }
+}
+
+.panel {
+    box-shadow: none;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-color: #25476a;
+    background-color: white;
+    border-radius: 15px;
+}
+
+    .panel h3 {
+        font-size: 150%;
+        font-weight: bolder;
+    }
+
+    .panel button {
+        border: none;
+        width: 30px;
+        margin: 0 7px;
+        height: 30px;
+        transition: transform 0.35s ease-in-out,font-size 0.4s ease-in-out;
+    }
+
+.summary {
+    width: 100px;
+    margin: 5px 9px;
+    height: 30px;
+    transition: transform 0.35s ease-in-out;
+    background-color: #ecf0f5;
+    color: #25476a;
+    border-radius: 10px;
+    border: solid;
+}
+
+    .summary:hover {
+        transform: scale(1.2,1.2);
+    }
+
+.createProject {
+    text-align: center;
+    padding: 30px;
+    font-size: large;
+    font-weight: bolder;
+}
+
+#backdrop {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 10;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+#summary {
+    position: absolute;
+    width: 50%;
+    background-color: #ecf0f5;
+    color: #25476a;
+    min-height: 70%;
+    top: 15%;
+    left: 25%;
+    z-index: 12;
+    visibility: hidden;
+    padding: 20px;
+    font-weight: bolder;
+    border: solid;
+    overflow: scroll;
+}
+#b1 {
+    padding: 15px 32px;
+}
